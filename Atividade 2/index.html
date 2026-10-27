@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um guia de Minecraft para organizar a primeira base e preparar as próximas explorações.">
+    <title>Minecraft | Minha primeira base</title>
+    <!-- Ícone da aba e estilos da página. -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+    <header id="inicio">
+        <p class="identificacao">Minecraft • Guia de sobrevivência</p>
+        <h1>Minecraft: montando a primeira base</h1>
+        <p class="apresentacao">Como organizar o abrigo e se preparar para explorar.</p>
+        <!-- Menu com acesso à segunda página e às seções abaixo. -->
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html" aria-current="page">Minha base</a></li>
+                <li><a href="exploracao.html">Próxima exploração</a></li>
+                <li><a href="#materiais">Materiais</a></li>
+                <li><a href="#passos">Por onde começar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <article aria-labelledby="titulo-base">
+            <section class="bloco" id="sobre">
+                <p class="etiqueta">01 / Planejamento</p>
+                <h2 id="titulo-base">Uma base pequena já funciona</h2>
+                <p>
+                    Depois de sobreviver à primeira noite, a vontade pode ser construir uma casa enorme.
+                    Mas vale começar com um espaço que seja fácil de terminar: um abrigo fechado,
+                    iluminado e com os itens de uso diário por perto.
+                </p>
+                <p>
+                    A ideia deste guia é montar uma base simples perto de madeira e de uma fonte de água.
+                    Assim, fica mais fácil guardar materiais, preparar comida e voltar das explorações.
+                    A decoração pode entrar aos poucos, conforme os recursos forem sobrando.
+                </p>
+                <!-- Planta com uma sugestão de onde colocar os itens. -->
+                <figure>
+                    <img src="imagens/planta-base.svg" width="960" height="440"
+                        alt="Planta de um abrigo retangular, com cama no canto superior esquerdo, dois baús à direita, bancada e fornalha à esquerda e entrada na parte inferior.">
+                    <figcaption>Sugestão de organização para o interior da base.</figcaption>
+                </figure>
+            </section>
+
+            <section class="bloco" id="materiais">
+                <p class="etiqueta">02 / Recursos</p>
+                <h2>O que separar antes de construir</h2>
+                <p>Não é preciso reunir tudo de uma vez. Estes materiais ajudam nas primeiras melhorias:</p>
+                <!-- Lista dos materiais para a base. -->
+                <ul class="lista-materiais">
+                    <li><strong>Madeira:</strong> para tábuas, portas, baús e a bancada de trabalho.</li>
+                    <li><strong>Pedregulho:</strong> para a fornalha e ferramentas de pedra.</li>
+                    <li><strong>Carvão ou carvão vegetal:</strong> para preparar tochas e iluminar o interior.</li>
+                    <li><strong>Lã e tábuas:</strong> para fazer uma cama quando esses recursos estiverem disponíveis.</li>
+                    <li><strong>Comida:</strong> para manter a exploração e a coleta de materiais.</li>
+                </ul>
+            </section>
+
+            <section class="bloco" id="passos">
+                <p class="etiqueta">03 / Construção</p>
+                <h2>Uma ordem para não se perder</h2>
+                <p>Separar a construção em etapas evita gastar o dia só pensando no formato da casa.</p>
+                <!-- Etapas da construção em ordem. -->
+                <ol class="lista-passos">
+                    <li>Escolher um terreno com espaço para o abrigo e uma pequena plantação futura.</li>
+                    <li>Levantar paredes, colocar um teto e fechar a entrada com uma porta.</li>
+                    <li>Iluminar o interior e conferir se ficaram aberturas nas paredes.</li>
+                    <li>Colocar a bancada e a fornalha próximas para facilitar o uso.</li>
+                    <li>Guardar os recursos nos baús, separando blocos, ferramentas e alimentos.</li>
+                    <li>Colocar a cama, se já tiver os materiais, e dormir nela para definir o ponto de renascimento no Mundo Superior.</li>
+                </ol>
+                <p class="observacao">Antes de ampliar a casa, confira se o básico está pronto: <em>abrigo, iluminação e espaço para guardar os itens</em>.</p>
+            </section>
+        </article>
+
+        <aside class="bloco dica" aria-labelledby="titulo-dica">
+            <p class="etiqueta">Para o próximo dia</p>
+            <h2 id="titulo-dica">Deixe uma reserva na base</h2>
+            <p>
+                Levar todos os recursos em uma única viagem aumenta o prejuízo se os itens forem perdidos.
+                Guarde parte da comida e alguns materiais de reposição antes de sair.
+                Na página <a href="exploracao.html">Próxima exploração</a>, há uma lista para preparar a mochila.
+            </p>
+            <p>
+                Para conhecer o jogo, acesse o
+                <a href="https://www.minecraft.net/pt-br" target="_blank" rel="noopener noreferrer">site oficial do Minecraft (abre em nova aba)</a>.
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Caio Alves Bezerra • Desenvolvimento Web • Atividade 2</p>
+        <a href="#inicio">Voltar ao início</a>
+    </footer>
+</body>
+</html>

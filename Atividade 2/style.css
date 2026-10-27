@@ -1,0 +1,221 @@
+/* Fonte e cores gerais. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f4ed;
+    color: #303c34;
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Largura do conteúdo. */
+header, main, footer {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 48px 0 24px;
+    text-align: center;
+}
+
+h1 {
+    margin: 12px 0;
+    color: #244a32;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Estilo dos subtítulos. */
+h2, h3 {
+    margin: 0 0 16px;
+    color: #365a34;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0 0 16px;
+}
+
+/* Textos do cabeçalho. */
+.identificacao {
+    color: #526248;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.apresentacao {
+    max-width: 560px;
+    margin: 18px auto 28px;
+    color: #526248;
+    font-size: 1.1rem;
+}
+
+/* Menu sem marcadores. */
+nav ul {
+    margin: 0;
+    padding: 12px;
+    border-top: 1px solid #ccd5c3;
+    border-bottom: 1px solid #ccd5c3;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 6px 10px;
+}
+
+a {
+    color: #345728;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+nav a {
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* Destaque dos links ao passar o mouse ou usar o teclado. */
+a:hover {
+    color: #79440d;
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 3px solid #94600f;
+    outline-offset: 4px;
+}
+
+nav a[aria-current="page"] {
+    color: #79440d;
+    text-decoration: underline;
+}
+
+/* Espaçamento e bordas das seções. */
+.bloco {
+    margin: 0 0 24px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccd5c3;
+    border-radius: 8px;
+}
+
+.etiqueta {
+    margin-bottom: 10px;
+    color: #626a40;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+figure {
+    margin: 24px 0 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #59624e;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Marcadores das listas. */
+.lista-materiais {
+    padding-left: 24px;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.lista-passos {
+    padding-left: 28px;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+.lista-materiais li, .lista-passos li {
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+/* Borda lateral da seção de materiais. */
+#materiais {
+    border-left-width: 5px;
+    border-left-color: #657b42;
+}
+
+.observacao {
+    margin-top: 22px;
+    color: #5c491e;
+    font-weight: 700;
+}
+
+.dica {
+    background-color: #e7eddb;
+}
+
+footer {
+    padding: 12px 0 36px;
+    color: #59624e;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+/* Atalho para navegação pelo teclado. */
+.pular-conteudo {
+    position: absolute;
+    top: -100px;
+    left: 12px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+}
+
+.pular-conteudo:focus {
+    top: 12px;
+}
+
+/* Ajustes para telas menores. */
+@media (max-width: 600px) {
+    header {
+        padding-top: 32px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .bloco {
+        padding: 22px;
+    }
+
+    nav li {
+        margin: 6px 8px;
+    }
+}

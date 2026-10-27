@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440">
+    <title>Organização de uma primeira base no Minecraft</title>
+    <desc>Planta esquemática com cama, dois baús, bancada, fornalha e entrada.</desc>
+    <rect width="960" height="440" fill="#e7eddb"/>
+    <g fill="none" stroke="#d4ddc5" stroke-width="1">
+        <path d="M0 40H960M0 80H960M0 120H960M0 160H960M0 200H960M0 240H960M0 280H960M0 320H960M0 360H960M0 400H960"/>
+        <path d="M40 0V440M80 0V440M120 0V440M160 0V440M200 0V440M240 0V440M280 0V440M320 0V440M360 0V440M400 0V440M440 0V440M480 0V440M520 0V440M560 0V440M600 0V440M640 0V440M680 0V440M720 0V440M760 0V440M800 0V440M840 0V440M880 0V440M920 0V440"/>
+    </g>
+    <rect x="235" y="48" width="490" height="328" fill="#f8f5e9" stroke="#586c3d" stroke-width="16"/>
+    <g stroke="#9c895f" stroke-width="2">
+        <rect x="266" y="79" width="112" height="86" fill="#9d4937"/>
+        <rect x="272" y="85" width="30" height="74" fill="#f9f2dd"/>
+        <rect x="584" y="79" width="110" height="64" fill="#b88b47"/>
+        <rect x="584" y="154" width="110" height="64" fill="#b88b47"/>
+        <rect x="266" y="204" width="100" height="60" fill="#c7a36b"/>
+        <rect x="266" y="282" width="100" height="60" fill="#babdb0"/>
+    </g>
+    <g font-family="Arial, sans-serif" font-size="19" text-anchor="middle" fill="#273726">
+        <text x="480" y="202" font-size="22" font-weight="bold">PRIMEIRA BASE</text>
+        <text x="480" y="232" font-size="17">espaço livre para circular</text>
+        <text x="322" y="192">cama</text>
+        <text x="639" y="116">baú</text>
+        <text x="639" y="193">baú</text>
+        <text x="316" y="241" font-size="17">bancada</text>
+        <text x="316" y="319" font-size="17">fornalha</text>
+        <text x="480" y="414" font-size="18">entrada</text>
+    </g>
+    <path d="M440 376H520" stroke="#f8f5e9" stroke-width="18"/>
+    <path d="M448 366H512" stroke="#b88b47" stroke-width="6"/>
+</svg>

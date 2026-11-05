@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha rotina - Atividade 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            color: #29313b;
+            margin: 0;
+            padding: 25px;
+        }
+
+        header, main, footer {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #284b70;
+        }
+
+        header p, footer {
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            border: 1px solid #cbd3dc;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        h2 {
+            color: #284b70;
+            font-size: 22px;
+        }
+
+        /* Permite ver a tabela inteira em telas pequenas. */
+        .area-tabela {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            color: #284b70;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid #9eacbc;
+            padding: 14px 10px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #284b70;
+            color: white;
+        }
+
+        tbody th {
+            background-color: #dbe6f2;
+            color: #213e5c;
+        }
+
+        tbody tr:nth-child(even) td {
+            background-color: #eef3f8;
+        }
+
+        tfoot td {
+            background-color: #dbe6f2;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .rotina {
+            min-width: 850px;
+        }
+
+        footer {
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Caio Alves Bezerra - Atividade 4 -->
+    <header>
+        <h1>Minha rotina e meus estudos</h1>
+        <p>Organização dos estudos e das atividades da semana.</p>
+    </header>
+
+    <main>
+        <section id="tabela1">
+            <h2>Tabela 1 - Horários de estudo</h2>
+            <p>Um horário para separar os conteúdos que preciso revisar durante a semana.</p>
+            <!-- Tabela com dias, horários e matérias. -->
+            <div class="area-tabela">
+                <table>
+                    <caption>Planejamento de estudos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Dia</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Conteúdo</th>
+                            <th scope="col">O que estudar</th>
+                            <th scope="col">Duração</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Segunda</th>
+                            <td>14h às 15h</td>
+                            <td>HTML</td>
+                            <td>Revisar as tags e montar uma página</td>
+                            <td>1 hora</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Terça</th>
+                            <td>14h às 15h</td>
+                            <td>CSS</td>
+                            <td>Praticar cores, bordas e espaçamento</td>
+                            <td>1 hora</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quarta</th>
+                            <td>14h às 15h</td>
+                            <td>JavaScript</td>
+                            <td>Resolver exercícios de funções</td>
+                            <td>1 hora</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quinta</th>
+                            <td>14h às 15h</td>
+                            <td>Java</td>
+                            <td>Revisar classes e objetos</td>
+                            <td>1 hora</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sexta</th>
+                            <td>14h às 15h</td>
+                            <td>Atividades</td>
+                            <td>Terminar e conferir as entregas</td>
+                            <td>1 hora</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total de estudo planejado na semana</td>
+                            <td>5 horas</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="tabela2">
+            <h2>Tabela 2 - Rotina semanal</h2>
+            <p>Uma sugestão de organização entre estudos, tarefas e tempo livre.</p>
+            <!-- Rotina dividida em manhã, tarde e noite. -->
+            <div class="area-tabela">
+                <table class="rotina">
+                    <caption>Organização da semana</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Período</th>
+                            <th scope="col">Domingo</th>
+                            <th scope="col">Segunda</th>
+                            <th scope="col">Terça</th>
+                            <th scope="col">Quarta</th>
+                            <th scope="col">Quinta</th>
+                            <th scope="col">Sexta</th>
+                            <th scope="col">Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Manhã</th>
+                            <td>Descansar</td>
+                            <td>Tarefas de casa</td>
+                            <td>Tarefas de casa</td>
+                            <td>Resolver pendências</td>
+                            <td>Tarefas de casa</td>
+                            <td>Organizar materiais</td>
+                            <td>Arrumar o quarto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tarde</th>
+                            <td>Tempo com a família</td>
+                            <td>Estudar HTML</td>
+                            <td>Estudar CSS</td>
+                            <td>Estudar JavaScript</td>
+                            <td>Estudar Java</td>
+                            <td>Terminar atividades</td>
+                            <td>Jogar Minecraft</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Noite</th>
+                            <td>Preparar a semana</td>
+                            <td>Faculdade</td>
+                            <td>Faculdade</td>
+                            <td>Faculdade</td>
+                            <td>Faculdade</td>
+                            <td>Revisar conteúdos</td>
+                            <td>Tempo livre</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Caio Alves Bezerra - Desenvolvimento Web - Atividade 4</p>
+    </footer>
+</body>
+</html>

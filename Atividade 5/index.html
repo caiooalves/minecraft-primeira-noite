@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do grupo de estudos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            background-color: #eef2f6;
+            color: #253442;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 28px;
+            background-color: white;
+            border: 1px solid #ccd6e0;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #284b70;
+            font-size: 26px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .campo {
+            margin-bottom: 16px;
+        }
+
+        .campo > label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input:not([type="radio"]):not([type="checkbox"]), select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #8396a8;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        :focus {
+            outline: 2px solid #28608f;
+            outline-offset: 2px;
+        }
+
+        fieldset {
+            margin: 0 0 16px;
+            padding: 10px 14px;
+            border: 1px solid #8396a8;
+            border-radius: 6px;
+        }
+
+        legend {
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+        .opcoes label {
+            display: inline-block;
+            margin: 4px 12px 4px 0;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 18px;
+            border: 1px solid #284b70;
+            border-radius: 6px;
+            background-color: #284b70;
+            color: white;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #173753;
+        }
+
+        button[type="reset"] {
+            background-color: white;
+            color: #284b70;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #e1eaf2;
+        }
+
+        footer {
+            margin-top: 22px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 18px;
+            }
+
+            .opcoes label {
+                display: block;
+            }
+
+            .botoes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Caio Alves Bezerra - Atividade 5 -->
+    <main>
+        <h1>Cadastro do grupo de estudos</h1>
+        <p>Preencha o formulário para praticar um cadastro. Use dados fictícios.</p>
+        <p>Os campos com * são obrigatórios.</p>
+
+        <!-- O navegador valida os campos e abre a página de confirmação. -->
+        <form action="confirmacao.html" method="get" autocomplete="off">
+            <div class="campo">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha *</label>
+                <input type="password" id="senha" minlength="6" autocomplete="new-password" aria-describedby="dica-senha" required>
+                <small id="dica-senha">Use pelo menos 6 caracteres.</small>
+            </div>
+
+            <div class="campo">
+                <label for="nascimento">Data de nascimento *</label>
+                <input type="date" id="nascimento" required>
+            </div>
+
+            <div class="campo">
+                <label for="curso">Curso *</label>
+                <select id="curso" required>
+                    <option value="">Selecione seu curso</option>
+                    <option value="engenharia">Engenharia de Software</option>
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="ciencia">Ciência da Computação</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <fieldset class="opcoes">
+                <legend>Sexo</legend>
+                <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+                <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                <label><input type="radio" name="sexo" value="nao-informado"> Prefiro não informar</label>
+            </fieldset>
+
+            <fieldset class="opcoes">
+                <legend>Interesses</legend>
+                <label><input type="checkbox" value="html"> HTML</label>
+                <label><input type="checkbox" value="css"> CSS</label>
+                <label><input type="checkbox" value="javascript"> JavaScript</label>
+            </fieldset>
+
+            <div class="campo">
+                <label for="comentarios">Comentários</label>
+                <textarea id="comentarios" rows="4"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="foto">Foto</label>
+                <input type="file" id="foto" accept="image/*">
+            </div>
+
+            <div class="botoes">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <footer>Caio Alves Bezerra | Desenvolvimento Web</footer>
+    </main>
+</body>
+</html>

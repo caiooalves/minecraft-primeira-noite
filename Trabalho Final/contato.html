@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Caio Alves Bezerra, estudante de Engenharia de Software.">
+    <title>Contato | Caio Alves Bezerra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho">
+        <div class="container menu">
+            <a class="nome-site" href="index.html">Caio Alves Bezerra</a>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Sobre mim</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" class="container">
+        <section class="introducao entrada" aria-labelledby="titulo">
+            <h1 id="titulo">Vamos conversar?</h1>
+            <p>Você pode entrar em contato comigo por e-mail ou acompanhar meus projetos e estudos nas redes abaixo.</p>
+        </section>
+
+        <div class="contato">
+            <section aria-labelledby="titulo-canais">
+                <h2 id="titulo-canais">Onde me encontrar</h2>
+                <ul class="canais-contato">
+                    <li>
+                        <strong>E-mail</strong>
+                        <a href="mailto:caioalvesb23@gmail.com">caioalvesb23@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/caiooalves" target="_blank" rel="noopener noreferrer">github.com/caiooalves</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/caio-alves-bezerra-6441073b4/" target="_blank" rel="noopener noreferrer">Caio Alves Bezerra no LinkedIn</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cartao" aria-labelledby="titulo-mensagem">
+                <h2 id="titulo-mensagem">Escreva uma mensagem</h2>
+                <p class="aviso-formulario">O envio é concluído no seu aplicativo de e-mail. Todos os campos são obrigatórios.</p>
+                <form onsubmit="prepararEmail(event)">
+                    <div class="campo">
+                        <label for="nome">Seu nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Seu e-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button class="botao" type="submit">Preparar e-mail</button>
+                    <p id="retorno-contato" role="status"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Caio Alves Bezerra · Engenharia de Software</p>
+            <nav class="redes" aria-label="Redes e contato">
+                <a href="https://github.com/caiooalves" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/caio-alves-bezerra-6441073b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:caioalvesb23@gmail.com">E-mail</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

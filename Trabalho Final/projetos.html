@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Caio Alves Bezerra, estudante de Engenharia de Software.">
+    <title>Projetos | Caio Alves Bezerra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho">
+        <div class="container menu">
+            <a class="nome-site" href="index.html">Caio Alves Bezerra</a>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Sobre mim</a></li>
+                    <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo" class="container">
+        <section class="introducao entrada" aria-labelledby="titulo">
+            <h1 id="titulo">Projetos da faculdade</h1>
+            <p>Estes são alguns trabalhos que desenvolvi durante a matéria de Desenvolvimento Web. Cada um aplica uma parte do conteúdo das aulas.</p>
+        </section>
+
+        <section aria-label="Lista de projetos">
+            <div class="filtros" role="group" aria-label="Filtrar projetos por conteúdo">
+                <button class="filtro" type="button" data-filtro="todos" aria-pressed="true" onclick="filtrarProjetos('todos')">Todos</button>
+                <button class="filtro" type="button" data-filtro="layout" aria-pressed="false" onclick="filtrarProjetos('layout')">Layout</button>
+                <button class="filtro" type="button" data-filtro="tabelas" aria-pressed="false" onclick="filtrarProjetos('tabelas')">Tabelas</button>
+                <button class="filtro" type="button" data-filtro="formulario" aria-pressed="false" onclick="filtrarProjetos('formulario')">Formulário</button>
+            </div>
+            <p id="quantidade-projetos" aria-live="polite">3 projetos encontrados</p>
+
+            <!-- Cada cartão tem uma categoria para o filtro em JavaScript. -->
+            <div class="grade">
+                <article class="cartao projeto" data-categoria="layout">
+                    <img src="imagens/projeto-minecraft.png" alt="Página com ideias de construções para uma base no Minecraft." width="960" height="600">
+                    <div class="conteudo-projeto">
+                        <h2>Guia de Minecraft</h2>
+                        <p>Uma página com seis ideias de construções e outra com orientações para começar cada uma.</p>
+                        <p>Pratiquei Grid, Flexbox, posicionamento e adaptação do layout para celular.</p>
+                        <div class="links-projeto">
+                            <a href="../Atividade%203/index.html" target="_blank" rel="noopener noreferrer">Ver site</a>
+                            <a href="https://github.com/caiooalves/minecraft-primeira-noite/tree/main/Atividade%203" target="_blank" rel="noopener noreferrer">Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cartao projeto" data-categoria="tabelas">
+                    <img src="imagens/projeto-tabelas.png" alt="Página com uma tabela de planejamento dos estudos." width="960" height="600">
+                    <div class="conteudo-projeto">
+                        <h2>Rotina de estudos</h2>
+                        <p>Duas tabelas para organizar os horários de estudo e as atividades da semana.</p>
+                        <p>Usei cabeçalhos, bordas, cores de fundo e células mescladas com colspan.</p>
+                        <div class="links-projeto">
+                            <a href="../Atividade%204/index.html" target="_blank" rel="noopener noreferrer">Ver site</a>
+                            <a href="https://github.com/caiooalves/minecraft-primeira-noite/tree/main/Atividade%204" target="_blank" rel="noopener noreferrer">Ver código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cartao projeto" data-categoria="formulario">
+                    <img src="imagens/projeto-formulario.png" alt="Formulário de cadastro com campos para nome, e-mail e curso." width="960" height="600">
+                    <div class="conteudo-projeto">
+                        <h2>Grupo de estudos</h2>
+                        <p>Um formulário de exemplo com campos de cadastro, interesses e seleção de foto.</p>
+                        <p>Pratiquei os tipos de input, labels, validação do HTML e efeitos de foco.</p>
+                        <div class="links-projeto">
+                            <a href="../Atividade%205/index.html" target="_blank" rel="noopener noreferrer">Ver site</a>
+                            <a href="https://github.com/caiooalves/minecraft-primeira-noite/tree/main/Atividade%205" target="_blank" rel="noopener noreferrer">Ver código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <p class="observacao">Outras atividades estão no <a href="https://github.com/caiooalves/minecraft-primeira-noite" target="_blank" rel="noopener noreferrer">meu repositório de Desenvolvimento Web</a>.</p>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Caio Alves Bezerra · Engenharia de Software</p>
+            <nav class="redes" aria-label="Redes e contato">
+                <a href="https://github.com/caiooalves" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/caio-alves-bezerra-6441073b4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:caioalvesb23@gmail.com">E-mail</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
